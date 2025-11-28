@@ -67,10 +67,11 @@ const MatrixGuide: React.FC = () => {
           <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Step 3: Sign In</h2>
           <div style={{ fontSize: '1.125rem', lineHeight: '2', color: '#666' }}>
             <p><strong>1.</strong> Open your chosen client (Element or QuikxChat)</p>
-            <p><strong>2.</strong> Click "Sign In"</p>
+            <p><strong>2.</strong> Click "Register" or "Create Account"</p>
             <p><strong>3.</strong> Enter homeserver: <code style={{ background: '#f5f5f5', padding: '4px 8px', borderRadius: '4px', color: '#167C80' }}>iquxae.org</code></p>
-            <p><strong>4.</strong> Enter your username and password (we'll email these to you)</p>
-            <p><strong>5.</strong> Click "Sign In" and you're in!</p>
+            <p><strong>4.</strong> Enter your desired username and password</p>
+            <p><strong>5.</strong> Use the one-time registration token we sent you via email</p>
+            <p><strong>6.</strong> Complete registration and you're in!</p>
           </div>
         </div>
       </section>
@@ -82,9 +83,11 @@ const MatrixGuide: React.FC = () => {
             Want Matrix on the go? We've got you covered:
           </p>
           <div style={{ fontSize: '1.125rem', lineHeight: '2', color: '#555' }}>
-            <p><strong>Android:</strong> Element (Google Play / F-Droid) or QuikxChat</p>
+            <p><strong>Android:</strong> Element (Google Play / F-Droid) or <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#167C80' }}>QuikxChat</a></p>
             <p><strong>iOS:</strong> Element (App Store)</p>
-            <p><strong>Desktop:</strong> Element Desktop (Windows, macOS, Linux)</p>
+            <p><strong>Windows:</strong> Element Desktop or <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#167C80' }}>QuikxChat</a></p>
+            <p><strong>Linux:</strong> Element Desktop or <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#167C80' }}>QuikxChat</a></p>
+            <p><strong>macOS:</strong> Element Desktop</p>
           </div>
           <p style={{ fontSize: '1rem', color: '#666', marginTop: '30px' }}>
             Just use <code style={{ background: '#fff', padding: '4px 8px', borderRadius: '4px', color: '#167C80' }}>iquxae.org</code> as your homeserver when setting up!
