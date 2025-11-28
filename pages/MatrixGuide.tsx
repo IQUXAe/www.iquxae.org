@@ -5,8 +5,8 @@ const MatrixGuide: React.FC = () => {
     <>
       <section style={{ background: '#167C80', color: '#fff', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ marginBottom: '15px', fontSize: '3.5rem', fontWeight: 300 }}>Registration Guide</h1>
-          <p style={{ fontSize: '1.25rem', fontWeight: 300 }}>How to join IQUXAe Matrix homeserver</p>
+          <h1 style={{ marginBottom: '15px', fontSize: '3.5rem', fontWeight: 300 }}>Getting Started</h1>
+          <p style={{ fontSize: '1.25rem', fontWeight: 300 }}>Join our Matrix community in 3 easy steps</p>
         </div>
       </section>
 
@@ -14,7 +14,7 @@ const MatrixGuide: React.FC = () => {
         <div className="container" style={{ maxWidth: '900px' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Step 1: Request Access</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '20px' }}>
-            IQUXAe.org operates a private Matrix homeserver. To request an account, send an email to:
+            We'd love to have you! Send us a friendly email to request an account:
           </p>
           <p style={{ fontSize: '1.25rem', marginBottom: '30px' }}>
             <a href="mailto:iquxae@proton.me" style={{ color: '#167C80', fontWeight: 500 }}>iquxae@proton.me</a>
@@ -25,7 +25,7 @@ const MatrixGuide: React.FC = () => {
               Subject: Matrix Account Request<br/><br/>
               Desired Username: your_username<br/>
               Display Name (Optional): Your Name<br/>
-              Reason: Brief reason for joining
+              Reason: Why you'd like to join
             </p>
           </div>
         </div>
@@ -33,16 +33,16 @@ const MatrixGuide: React.FC = () => {
 
       <section style={{ padding: '80px 0', background: '#E0F6F7' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Step 2: Choose a Client</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Step 2: Pick Your Client</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555', marginBottom: '40px' }}>
-            Once your account is approved, you can access the homeserver using any Matrix client. We recommend:
+            Once you're approved, choose your favorite way to connect. We've got two great web clients:
           </p>
           
           <div style={{ display: 'grid', gap: '30px' }}>
             <div style={{ background: '#fff', padding: '30px', borderRadius: '8px' }}>
               <h3 style={{ fontSize: '1.75rem', fontWeight: 400, marginBottom: '15px' }}>Element Web</h3>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '20px' }}>
-                Full-featured Matrix client with support for all Matrix features including voice/video calls.
+                The full Matrix experience with all the bells and whistles - voice calls, video calls, and everything in between!
               </p>
               <a href="https://element.iquxae.org" className="btn" target="_blank" rel="noopener noreferrer">
                 Open Element Web
@@ -52,9 +52,9 @@ const MatrixGuide: React.FC = () => {
             <div style={{ background: '#fff', padding: '30px', borderRadius: '8px' }}>
               <h3 style={{ fontSize: '1.75rem', fontWeight: 400, marginBottom: '15px' }}>QuikxChat Web</h3>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '20px' }}>
-                Lightweight, fast Matrix client built specifically for IQUXAe homeserver.
+                Our own lightweight messenger - fast, simple, and built just for our community.
               </p>
-              <a href="https://quikxchat.iquxae.org" className="btn" target="_blank" rel="noopener noreferrer">
+              <a href="https://quikxchat.iquxae.org/app" className="btn" target="_blank" rel="noopener noreferrer">
                 Open QuikxChat Web
               </a>
             </div>
@@ -64,22 +64,22 @@ const MatrixGuide: React.FC = () => {
 
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Step 3: Login</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Step 3: Sign In</h2>
           <div style={{ fontSize: '1.125rem', lineHeight: '2', color: '#666' }}>
             <p><strong>1.</strong> Open your chosen client (Element or QuikxChat)</p>
             <p><strong>2.</strong> Click "Sign In"</p>
             <p><strong>3.</strong> Enter homeserver: <code style={{ background: '#f5f5f5', padding: '4px 8px', borderRadius: '4px', color: '#167C80' }}>iquxae.org</code></p>
-            <p><strong>4.</strong> Enter your username and password (provided via email)</p>
-            <p><strong>5.</strong> Click "Sign In"</p>
+            <p><strong>4.</strong> Enter your username and password (we'll email these to you)</p>
+            <p><strong>5.</strong> Click "Sign In" and you're in!</p>
           </div>
         </div>
       </section>
 
       <section style={{ padding: '80px 0', background: '#E0F6F7' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Mobile Apps</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px' }}>Mobile & Desktop Apps</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555', marginBottom: '30px' }}>
-            You can also use Matrix on mobile devices:
+            Want Matrix on the go? We've got you covered:
           </p>
           <div style={{ fontSize: '1.125rem', lineHeight: '2', color: '#555' }}>
             <p><strong>Android:</strong> Element (Google Play / F-Droid) or QuikxChat</p>
@@ -87,7 +87,7 @@ const MatrixGuide: React.FC = () => {
             <p><strong>Desktop:</strong> Element Desktop (Windows, macOS, Linux)</p>
           </div>
           <p style={{ fontSize: '1rem', color: '#666', marginTop: '30px' }}>
-            When setting up mobile/desktop apps, use <code style={{ background: '#fff', padding: '4px 8px', borderRadius: '4px', color: '#167C80' }}>iquxae.org</code> as your homeserver.
+            Just use <code style={{ background: '#fff', padding: '4px 8px', borderRadius: '4px', color: '#167C80' }}>iquxae.org</code> as your homeserver when setting up!
           </p>
         </div>
       </section>
@@ -96,9 +96,9 @@ const MatrixGuide: React.FC = () => {
         <div className="container" style={{ maxWidth: '900px', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>Need Help?</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '30px' }}>
-            If you encounter any issues during registration or login, contact us at:
+            Stuck somewhere? We're here to help! Just reach out:
           </p>
-          <a href="mailto:iquxae@proton.me" className="btn">Contact Support</a>
+          <a href="mailto:iquxae@proton.me" className="btn">Get in Touch</a>
         </div>
       </section>
     </>
