@@ -64,6 +64,7 @@ a:hover {
 .btn:hover {
   background: #1a252f;
   border-color: #1a252f;
+  color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3);
 }
