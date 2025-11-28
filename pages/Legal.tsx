@@ -33,11 +33,32 @@ const Legal: React.FC = () => {
             </p>
           </div>
 
-          <div>
+          <div style={{ marginBottom: '40px' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>SERVICE AVAILABILITY</h3>
             <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666' }}>
               IQUXAe.org services are provided as a hobby project. The administrator reserves the right to modify, suspend, 
               or discontinue any service at any time without notice.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: '40px' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>SERVER LOCATION & JURISDICTION</h3>
+            <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '15px' }}>
+              Our servers are located in Poland (European Union). By using our services, you acknowledge that your data 
+              will be processed and stored on servers in Poland.
+            </p>
+            <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666' }}>
+              This service is intended for international use with data stored in the EU. If your local jurisdiction 
+              requires data to be stored within specific geographic boundaries, you are responsible for ensuring 
+              compliance with such requirements before using this service.
+            </p>
+          </div>
+
+          <div>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>LIMITATION OF LIABILITY</h3>
+            <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666' }}>
+              The administrator shall not be liable for any damages, losses, or legal consequences arising from use of this service. 
+              You use this service entirely at your own risk and are responsible for compliance with local laws in your jurisdiction.
             </p>
           </div>
         </div>
