@@ -23,20 +23,20 @@ const News: React.FC = () => {
           </article>
 
           <article style={{ marginBottom: '60px', paddingBottom: '60px', borderBottom: '1px solid #eee' }}>
-            <h2 style={{ fontSize: '2rem', fontWeight: 400, marginBottom: '10px', color: '#2C3E50' }}>QuikxChat Multi-Platform Release</h2>
+            <h2 style={{ fontSize: '2rem', fontWeight: 400, marginBottom: '10px', color: '#2C3E50' }}>Matrix Server Launch</h2>
             <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>November 2025</p>
             <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }}>
-              QuikxChat is now available on multiple platforms! You can now use our lightweight Matrix messenger 
-              on Android, Windows, and Linux, in addition to the web version. iOS support coming soon.
+              Our private Matrix homeserver is now live! We're offering secure, encrypted communication 
+              with full federation support. Registration is by invitation to maintain a quality community.
             </p>
           </article>
 
           <article style={{ marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '2rem', fontWeight: 400, marginBottom: '10px', color: '#2C3E50' }}>Matrix Server Launch</h2>
-            <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>October 2025</p>
+            <h2 style={{ fontSize: '2rem', fontWeight: 400, marginBottom: '10px', color: '#2C3E50' }}>QuikxChat Multi-Platform Release</h2>
+            <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>September 2025</p>
             <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }}>
-              Our private Matrix homeserver is now live! We're offering secure, encrypted communication 
-              with full federation support. Registration is by invitation to maintain a quality community.
+              QuikxChat is now available on multiple platforms! You can now use our lightweight Matrix messenger 
+              on Android, Windows, and Linux, in addition to the web version. iOS support coming soon.
             </p>
           </article>
         </div>
