@@ -1,40 +1,43 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../locales/translations';
 
 const About: React.FC = () => {
+  const { language } = useLanguage();
+  const t = translations[language].about;
+  
   return (
     <>
       <section style={{ background: '#2C3E50', color: '#fff', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ marginBottom: '15px', fontSize: '3.5rem', fontWeight: 300 }}>About IQUXAe</h1>
-          <p style={{ fontSize: '1.25rem', fontWeight: 300 }}>The philosophy behind the project</p>
+          <h1 style={{ marginBottom: '15px', fontSize: '3.5rem', fontWeight: 300 }}>{t.title}</h1>
+          <p style={{ fontSize: '1.25rem', fontWeight: 300 }}>{t.subtitle}</p>
         </div>
       </section>
 
       <section style={{ padding: '80px 0', background: '#fff', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>What is IQUXAe.org?</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>{t.whatTitle}</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666' }}>
-            IQUXAe.org is a personal infrastructure project hosting privacy-focused services and open-source experiments. 
-            Home to a private Matrix homeserver and QuikxChat development.
+            {t.whatDesc}
           </p>
         </div>
       </section>
 
       <section style={{ padding: '80px 0', background: '#f8f9fa', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>The Philosophy</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>{t.philTitle}</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555' }}>
-            Built on principles of decentralization, privacy, and open-source software. 
-            IQUXAe promotes protocol-based communication over centralized platforms.
+            {t.philDesc}
           </p>
         </div>
       </section>
 
       <section style={{ padding: '80px 0', background: '#fff', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>Who runs it?</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>{t.whoTitle}</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666' }}>
-            IQUXAe.org is maintained as a hobby project by one person passionate about privacy, decentralization, and open-source development.
+            {t.whoDesc}
           </p>
         </div>
       </section>

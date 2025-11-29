@@ -1,45 +1,50 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../locales/translations';
 
 const Donate: React.FC = () => {
+  const { language } = useLanguage();
+  const t = translations[language].donate;
+  
   return (
     <>
       <section style={{ background: '#2C3E50', color: '#fff', padding: '100px 0', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ marginBottom: '15px', fontSize: '3.5rem', fontWeight: 300 }}>Support IQUXAe</h1>
-          <p style={{ fontSize: '1.25rem', fontWeight: 300 }}>Help keep the servers running</p>
+          <h1 style={{ marginBottom: '15px', fontSize: '3.5rem', fontWeight: 300 }}>{t.title}</h1>
+          <p style={{ fontSize: '1.25rem', fontWeight: 300 }}>{t.subtitle}</p>
         </div>
       </section>
 
       <section style={{ padding: '80px 0', background: '#fff', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '700px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>Donate via Donation Alerts</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>{t.donateTitle}</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '40px' }}>
-            IQUXAe.org is a non-commercial hobby project. Donations directly cover server hosting, domain renewals, and infrastructure costs.
+            {t.donateDesc}
           </p>
-          <a href="https://dalink.to/iquxae" className="btn" target="_blank" rel="noopener noreferrer">Donate Now</a>
+          <a href="https://dalink.to/iquxae" className="btn" target="_blank" rel="noopener noreferrer">{t.donateBtn}</a>
         </div>
       </section>
 
       <section style={{ padding: '80px 0', background: '#f8f9fa' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px', textAlign: 'center' }}>Where does the money go?</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px', textAlign: 'center' }}>{t.whereTitle}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', maxWidth: '900px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center' }}>
-              <h4 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>Infrastructure</h4>
+              <h4 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>{t.infraTitle}</h4>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555' }}>
-                VPS hosting and bandwidth
+                {t.infraDesc}
               </p>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <h4 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>Domains</h4>
+              <h4 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>{t.domainsTitle}</h4>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555' }}>
-                Annual registration fees
+                {t.domainsDesc}
               </p>
             </div>
             <div style={{ textAlign: 'center' }}>
-              <h4 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>Development</h4>
+              <h4 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>{t.devTitle}</h4>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555' }}>
-                Time and resources
+                {t.devDesc}
               </p>
             </div>
           </div>
@@ -48,22 +53,20 @@ const Donate: React.FC = () => {
 
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px', textAlign: 'center' }}>Other ways to support</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px', textAlign: 'center' }}>{t.otherTitle}</h2>
           <div style={{ fontSize: '1.125rem', lineHeight: '2', color: '#666' }}>
-            <p>• Spread the word about decentralized communication</p>
-            <p>• Contribute code to our projects</p>
-            <p>• Report bugs and share feedback</p>
+            <p>{t.other1}</p>
+            <p>{t.other2}</p>
+            <p>{t.other3}</p>
           </div>
         </div>
       </section>
 
       <section style={{ padding: '80px 0', background: '#f8f9fa', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '700px' }}>
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>Thank You!</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '30px' }}>{t.thankTitle}</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }}>
-            Every contribution, no matter how small, makes a real difference. Your support helps us keep the servers online, 
-            maintain our services, and continue building open-source tools for the community. We're incredibly grateful 
-            for your generosity and belief in what we're doing. Thank you for being part of our journey!
+            {t.thankDesc}
           </p>
         </div>
       </section>
