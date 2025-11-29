@@ -5,6 +5,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 const Navbar: React.FC = () => {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
   const [hidden, setHidden] = useState(false);
@@ -86,7 +87,15 @@ const Navbar: React.FC = () => {
           <Link to="/donate" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'Donate' : 'Поддержать'}</Link>
           <Link to="/about" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'About' : 'О нас'}</Link>
           <Link to="/legal" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'Legal' : 'Правовая информация'}</Link>
-          <button onClick={() => setLanguage(language === 'en' ? 'ru' : 'en')} style={{ fontSize: '15px', fontWeight: 400, color: '#555', background: 'none', border: 'none', cursor: 'pointer', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'RU' : 'EN'}</button>
+          <div style={{ position: 'relative' }}>
+            <button onClick={() => setLangOpen(!langOpen)} style={{ fontSize: '15px', fontWeight: 500, color: '#555', background: 'none', border: 'none', cursor: 'pointer', transition: 'color 0.2s', fontFamily: 'Roboto, sans-serif', letterSpacing: '0.5px' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'EN' : 'RU'} ▾</button>
+            {langOpen && (
+              <div style={{ position: 'absolute', top: '100%', right: 0, background: '#fff', boxShadow: '0 2px 8px rgba(0,0,0,0.15)', borderRadius: '4px', marginTop: '8px', minWidth: '80px', zIndex: 1001 }}>
+                <button onClick={() => { setLanguage('en'); setLangOpen(false); }} style={{ display: 'block', width: '100%', padding: '10px 20px', fontSize: '15px', fontWeight: 500, color: '#555', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', fontFamily: 'Roboto, sans-serif', transition: 'background 0.2s' }} onMouseOver={(e) => e.currentTarget.style.background = '#f5f5f5'} onMouseOut={(e) => e.currentTarget.style.background = 'none'}>EN</button>
+                <button onClick={() => { setLanguage('ru'); setLangOpen(false); }} style={{ display: 'block', width: '100%', padding: '10px 20px', fontSize: '15px', fontWeight: 500, color: '#555', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', fontFamily: 'Roboto, sans-serif', transition: 'background 0.2s' }} onMouseOver={(e) => e.currentTarget.style.background = '#f5f5f5'} onMouseOut={(e) => e.currentTarget.style.background = 'none'}>RU</button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
