@@ -44,8 +44,8 @@ const Legal: React.FC = () => {
           <div style={{ marginBottom: '40px' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '15px' }}>SERVER LOCATION & JURISDICTION</h3>
             <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '15px' }}>
-              Our servers are located in Poland (European Union). By using our services, you acknowledge that your data 
-              will be processed and stored on servers in Poland.
+              Our servers are located in Russia. By using our services, you acknowledge that your data 
+              will be processed and stored on servers in Russia.
             </p>
             <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666' }}>
               This service is intended for international use with data stored in the EU. If your local jurisdiction 

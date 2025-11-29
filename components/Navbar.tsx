@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Navbar: React.FC = () => {
+  const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
@@ -77,13 +79,14 @@ const Navbar: React.FC = () => {
           gap: '30px',
           alignItems: 'center'
         }} className="nav-links">
-          <Link to="/" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>Home</Link>
+          <Link to="/" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'Home' : 'Главная'}</Link>
           <Link to="/matrix" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>Matrix</Link>
           <Link to="/quikxchat" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>QuikxChat</Link>
-          <Link to="/news" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>News</Link>
-          <Link to="/donate" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>Donate</Link>
-          <Link to="/about" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>About</Link>
-          <Link to="/legal" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>Legal</Link>
+          <Link to="/news" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'News' : 'Новости'}</Link>
+          <Link to="/donate" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'Donate' : 'Поддержать'}</Link>
+          <Link to="/about" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'About' : 'О нас'}</Link>
+          <Link to="/legal" style={{ fontSize: '15px', fontWeight: 400, color: '#555', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'Legal' : 'Правовая информация'}</Link>
+          <button onClick={() => setLanguage(language === 'en' ? 'ru' : 'en')} style={{ fontSize: '15px', fontWeight: 400, color: '#555', background: 'none', border: 'none', cursor: 'pointer', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = '#2C3E50'} onMouseOut={(e) => e.currentTarget.style.color = '#555'}>{language === 'en' ? 'RU' : 'EN'}</button>
         </div>
       </div>
 
