@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../locales/translations';
 
 const Home: React.FC = () => {
+  const { language } = useLanguage();
+  const t = translations[language].home;
+  const tn = translations[language].nav;
+  
   return (
     <>
       {/* Hero */}
@@ -12,13 +18,13 @@ const Home: React.FC = () => {
         textAlign: 'center'
       }}>
         <div className="container">
-          <h1 style={{ marginBottom: '20px', fontSize: '3.5rem', fontWeight: 300 }}>IQUXAe.org</h1>
+          <h1 style={{ marginBottom: '20px', fontSize: '3.5rem', fontWeight: 300 }}>{t.title}</h1>
           <p style={{ fontSize: '1.25rem', fontWeight: 300, marginBottom: '40px' }}>
-            Privacy-focused services and open-source projects
+            {t.subtitle}
           </p>
           <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link to="/matrix" className="btn" style={{ background: '#fff', color: '#2C3E50', borderColor: '#fff' }}>Get Started</Link>
-            <a href="https://github.com/IQUXAe" className="btn btn-secondary" style={{ color: '#fff', borderColor: '#fff' }}>GitHub</a>
+            <Link to="/matrix" className="btn" style={{ background: '#fff', color: '#2C3E50', borderColor: '#fff' }}>{t.getStarted}</Link>
+            <a href="https://github.com/IQUXAe" className="btn btn-secondary" style={{ color: '#fff', borderColor: '#fff' }}>{t.github}</a>
           </div>
         </div>
       </section>
@@ -28,12 +34,11 @@ const Home: React.FC = () => {
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '60px', flexWrap: 'wrap' }}>
             <div style={{ flex: '1', minWidth: '300px' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '20px' }}>Matrix Homeserver</h2>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '20px' }}>{t.matrixTitle}</h2>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '30px' }}>
-                Our private Matrix homeserver with end-to-end encryption. Secure, decentralized communication 
-                that respects your privacy and connects with the global Matrix network.
+                {t.matrixDesc}
               </p>
-              <Link to="/matrix" className="btn">Learn More</Link>
+              <Link to="/matrix" className="btn">{t.learnMore}</Link>
             </div>
             <div style={{ flex: '1', minWidth: '300px', textAlign: 'center' }}>
               <svg width="300" height="300" viewBox="0 0 24 24" fill="#2C3E50">
@@ -49,12 +54,11 @@ const Home: React.FC = () => {
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '60px', flexWrap: 'wrap', flexDirection: 'row-reverse' }}>
             <div style={{ flex: '1', minWidth: '300px' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '20px' }}>QuikxChat</h2>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '20px' }}>{t.quikxchatTitle}</h2>
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555', marginBottom: '30px' }}>
-                Our own lightweight Matrix messenger built for speed and simplicity. 
-                Available on Android, Windows, Linux, and Web with a clean, distraction-free interface.
+                {t.quikxchatDesc}
               </p>
-              <Link to="/quikxchat" className="btn">Explore</Link>
+              <Link to="/quikxchat" className="btn">{t.explore}</Link>
             </div>
             <div style={{ flex: '1', minWidth: '300px', textAlign: 'center' }}>
               <img src="/logo2.png" alt="QuikxChat" style={{ maxWidth: '300px', height: 'auto' }} />
@@ -66,30 +70,29 @@ const Home: React.FC = () => {
       {/* Support Section */}
       <section style={{ padding: '80px 0', background: '#2C3E50', color: '#fff', textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '20px' }}>Support Our Project</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '20px' }}>{t.supportTitle}</h2>
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', marginBottom: '40px', maxWidth: '700px', margin: '0 auto 40px' }}>
-            IQUXAe is an independent hobby project. Your support helps keep our servers running 
-            and enables us to continue developing open-source tools for the community.
+            {t.supportDesc}
           </p>
-          <Link to="/donate" className="btn" style={{ background: '#fff', color: '#2C3E50', borderColor: '#fff' }}>Donate</Link>
+          <Link to="/donate" className="btn" style={{ background: '#fff', color: '#2C3E50', borderColor: '#fff' }}>{t.donateBtn}</Link>
         </div>
       </section>
 
       {/* Latest News */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px', textAlign: 'center' }}>Latest News</h2>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: 300, marginBottom: '40px', textAlign: 'center' }}>{t.newsTitle}</h2>
           <div style={{
             maxWidth: '800px',
             margin: '0 auto',
             padding: '40px 0'
           }}>
-            <h3 style={{ color: '#2C3E50', marginBottom: '10px', fontSize: '1.5rem', fontWeight: 400 }}>Website Redesign Complete</h3>
-            <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>November 28, 2025</p>
+            <h3 style={{ color: '#2C3E50', marginBottom: '10px', fontSize: '1.5rem', fontWeight: 400 }}>{t.newsItemTitle}</h3>
+            <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>{t.newsItemDate}</p>
             <p style={{ color: '#666', lineHeight: 1.8, fontSize: '1.125rem', marginBottom: '30px' }}>
-              We've completely redesigned IQUXAe.org with a fresh new look and improved navigation.
+              {t.newsItemDesc}
             </p>
-            <Link to="/news" style={{ fontSize: '14px', fontWeight: 500 }}>Read all news →</Link>
+            <Link to="/news" style={{ fontSize: '14px', fontWeight: 500 }}>{t.readAll}</Link>
           </div>
         </div>
       </section>

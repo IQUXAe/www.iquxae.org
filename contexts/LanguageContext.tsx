@@ -10,10 +10,20 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>(() => {
+    const saved = localStorage.getItem('language');
+    if (saved) return saved as Language;
+    const browserLang = navigator.language.toLowerCase();
+    return browserLang.startsWith('ru') ? 'ru' : 'en';
+  });
+
+  const updateLanguage = (lang: Language) => {
+    setLanguage(lang);
+    localStorage.setItem('language', lang);
+  };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={{ language, setLanguage: updateLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
