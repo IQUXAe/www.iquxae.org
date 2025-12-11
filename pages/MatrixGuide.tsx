@@ -68,7 +68,7 @@ const MatrixGuide: React.FC = () => {
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '20px' }}>
                 {t.quikxDesc}
               </p>
-              <a href="https://quikxchat.iquxae.org/app" className="btn" target="_blank" rel="noopener noreferrer">
+              <a href="https://quikxchat.iquxae.org/web" className="btn" target="_blank" rel="noopener noreferrer">
                 {t.openQuikx}
               </a>
             </div>
@@ -97,10 +97,10 @@ const MatrixGuide: React.FC = () => {
             {t.mobileDesc}
           </p>
           <div style={{ fontSize: '1.125rem', lineHeight: '2', color: '#555' }}>
-            <p><strong>Android:</strong> Element (Google Play / F-Droid) or <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#2C3E50' }}>QuikxChat</a></p>
+            <p><strong>Android:</strong> <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#2C3E50' }}>QuikxChat</a></p>
             <p><strong>iOS:</strong> Element (App Store)</p>
-            <p><strong>Windows:</strong> Element Desktop or <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#2C3E50' }}>QuikxChat</a></p>
-            <p><strong>Linux:</strong> Element Desktop or <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#2C3E50' }}>QuikxChat</a></p>
+            <p><strong>Windows:</strong> <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#2C3E50' }}>QuikxChat</a></p>
+            <p><strong>Linux:</strong> <a href="https://quikxchat.iquxae.org" target="_blank" rel="noopener noreferrer" style={{ color: '#2C3E50' }}>QuikxChat</a></p>
             <p><strong>macOS:</strong> Element Desktop</p>
           </div>
           <p style={{ fontSize: '1rem', color: '#666', marginTop: '30px' }}>
@@ -115,7 +115,10 @@ const MatrixGuide: React.FC = () => {
           <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#666', marginBottom: '30px' }}>
             {t.helpDesc}
           </p>
-          <a href="mailto:iquxae@proton.me" className="btn">{t.getInTouch}</a>
+          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+            <a href="mailto:iquxae@proton.me" className="btn">{t.getInTouch}</a>
+            <a href="https://github.com/IQUXAe/QuikxChat/issues" className="btn" target="_blank" rel="noopener noreferrer" style={{ background: '#333' }}>{t.reportIssue}</a>
+          </div>
         </div>
       </section>
     </>

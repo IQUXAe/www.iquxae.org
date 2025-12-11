@@ -112,7 +112,8 @@ export const translations = {
       mobileNote2: 'as your homeserver when setting up!',
       helpTitle: 'Need Help?',
       helpDesc: "Stuck somewhere? We're here to help! Just reach out:",
-      getInTouch: 'Get in Touch'
+      getInTouch: 'Get in Touch',
+      reportIssue: 'GitHub Issues'
     },
     quikxchat: {
       subtitle: 'Feature-rich Matrix client',
@@ -170,15 +171,15 @@ export const translations = {
     news: {
       title: 'News',
       subtitle: 'Latest updates from IQUXAe.org',
-      item1Title: 'Website Redesign Complete',
-      item1Date: 'November 28, 2025',
-      item1Desc: "We've completely redesigned IQUXAe.org with a fresh new look! The site now features a cleaner interface, better navigation, and improved mobile support. We've also added a comprehensive registration guide to help new users join our Matrix homeserver.",
-      item2Title: 'Matrix Server Launch',
-      item2Date: 'November 2025',
-      item2Desc: "Our private Matrix homeserver is now live! We're offering secure, encrypted communication with full federation support. Registration is by invitation to maintain a quality community.",
-      item3Title: 'QuikxChat Multi-Platform Release',
-      item3Date: 'September 2025',
-      item3Desc: 'QuikxChat is now available on multiple platforms! You can now use our lightweight Matrix messenger on Android, Windows, and Linux, in addition to the web version. iOS support coming soon.'
+      item1Title: 'Added firebase messaging and testing voip calls in quikxchat!',
+      item1Date: 'December 11, 2025',
+      item1Desc: "After a long time, I decided to return calls from the fluffychat base, they are currently under development, but the main functionality is implemented. I also returned firebase messaging (with the ability to switch to unified push and vice versa) and implemented voip and firebase messaging on my server <a href='./#/matrix' style='color: #2C3E50; text-decoration: underline;'>iquxae.org</a>",
+      item2Title: 'Website Redesign Complete',
+      item2Date: 'November 28, 2025',
+      item2Desc: "We've completely redesigned IQUXAe.org with a fresh new look! The site now features a cleaner interface, better navigation, and improved mobile support. We've also added a comprehensive registration guide to help new users join our Matrix homeserver.",
+      item3Title: 'Matrix Server Launch',
+      item3Date: 'November 2025',
+      item3Desc: "Our private Matrix homeserver is now live! We're offering secure, encrypted communication with full federation support. Registration is by invitation to maintain a quality community."
     }
   },
   ru: {
@@ -294,7 +295,8 @@ export const translations = {
       mobileNote2: 'в качестве homeserver при настройке!',
       helpTitle: 'Нужна помощь?',
       helpDesc: 'Застряли где-то? Мы здесь, чтобы помочь! Просто свяжитесь с нами:',
-      getInTouch: 'Связаться'
+      getInTouch: 'Связаться',
+      reportIssue: 'GitHub Issues'
     },
     quikxchat: {
       subtitle: 'Функциональный Matrix клиент',
@@ -352,15 +354,15 @@ export const translations = {
     news: {
       title: 'Новости',
       subtitle: 'Последние обновления от IQUXAe.org',
-      item1Title: 'Редизайн сайта завершен',
-      item1Date: '28 ноября 2025',
-      item1Desc: 'Мы полностью переработали IQUXAe.org с новым дизайном! Сайт теперь имеет более чистый интерфейс, улучшенную навигацию и улучшенную поддержку мобильных устройств. Мы также добавили подробное руководство по регистрации, чтобы помочь новым пользователям присоединиться к нашему Matrix homeserver.',
-      item2Title: 'Запуск Matrix сервера',
-      item2Date: 'Ноябрь 2025',
-      item2Desc: 'Наш приватный Matrix homeserver теперь работает! Мы предлагаем безопасную, зашифрованную связь с полной поддержкой федерации. Регистрация по приглашению для поддержания качественного сообщества.',
-      item3Title: 'Мультиплатформенный релиз QuikxChat',
-      item3Date: 'Сентябрь 2025',
-      item3Desc: 'QuikxChat теперь доступен на нескольких платформах! Теперь вы можете использовать наш легкий Matrix мессенджер на Android, Windows и Linux, в дополнение к веб-версии. Поддержка iOS скоро появится.'
+      item1Title: 'Добавление firebase messaging и тестирование voip звонков в quikxchat!',
+      item1Date: '11 декабря 2025',
+      item1Desc: 'спустя долгое время я решил вернуть и звонки из основы fluffychat, сейчас они на стадии разработки, но основная функциональность реализована, также я вернул firebase messaging( с возможностью переключения на unified push и наоборот) и реализовал voip и firebase messaging на своем сервере <a href="./#/matrix" style="color: #2C3E50; text-decoration: underline;">iquxae.org</a>',
+      item2Title: 'Редизайн сайта завершен',
+      item2Date: '28 ноября 2025',
+      item2Desc: 'Мы полностью переработали IQUXAe.org с новым дизайном! Сайт теперь имеет более чистый интерфейс, улучшенную навигацию и улучшенную поддержку мобильных устройств. Мы также добавили подробное руководство по регистрации, чтобы помочь новым пользователям присоединиться к нашему Matrix homeserver.',
+      item3Title: 'Запуск Matrix сервера',
+      item3Date: 'Ноябрь 2025',
+      item3Desc: 'Наш приватный Matrix homeserver теперь работает! Мы предлагаем безопасную, зашифрованную связь с полной поддержкой федерации. Регистрация по приглашению для поддержания качественного сообщества.'
     }
   }
 };

@@ -20,25 +20,19 @@ const News: React.FC = () => {
           <article style={{ marginBottom: '60px', paddingBottom: '60px', borderBottom: '1px solid #eee' }}>
             <h2 style={{ fontSize: '2rem', fontWeight: 400, marginBottom: '10px', color: '#2C3E50' }}>{t.item1Title}</h2>
             <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>{t.item1Date}</p>
-            <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }}>
-              {t.item1Desc}
-            </p>
+            <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }} dangerouslySetInnerHTML={{ __html: t.item1Desc }} />
           </article>
 
           <article style={{ marginBottom: '60px', paddingBottom: '60px', borderBottom: '1px solid #eee' }}>
             <h2 style={{ fontSize: '2rem', fontWeight: 400, marginBottom: '10px', color: '#2C3E50' }}>{t.item2Title}</h2>
             <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>{t.item2Date}</p>
-            <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }}>
-              {t.item2Desc}
-            </p>
+            <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }} dangerouslySetInnerHTML={{ __html: t.item2Desc }} />
           </article>
 
           <article style={{ marginBottom: '60px' }}>
             <h2 style={{ fontSize: '2rem', fontWeight: 400, marginBottom: '10px', color: '#2C3E50' }}>{t.item3Title}</h2>
             <p style={{ fontSize: '14px', color: '#999', marginBottom: '20px' }}>{t.item3Date}</p>
-            <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }}>
-              {t.item3Desc}
-            </p>
+            <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#666' }} dangerouslySetInnerHTML={{ __html: t.item3Desc }} />
           </article>
         </div>
       </section>

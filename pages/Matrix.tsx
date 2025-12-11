@@ -54,7 +54,7 @@ const Matrix: React.FC = () => {
               <p style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#555', marginBottom: '30px' }}>
                 {t.quikxchatDesc}
               </p>
-              <a href="https://quikxchat.iquxae.org/app" className="btn" target="_blank" rel="noopener noreferrer">{t.launchQuikx}</a>
+              <a href="https://quikxchat.iquxae.org/web" className="btn" target="_blank" rel="noopener noreferrer">{t.launchQuikx}</a>
             </div>
           </div>
         </div>
