@@ -171,9 +171,9 @@ export const translations = {
     news: {
       title: 'News',
       subtitle: 'Latest updates from IQUXAe.org',
-      item1Title: 'Added firebase messaging and testing voip calls in quikxchat!',
+      item1Title: 'Firebase Messaging and VoIP Calls in QuikxChat',
       item1Date: 'December 11, 2025',
-      item1Desc: "After a long time, I decided to return calls from the fluffychat base, they are currently under development, but the main functionality is implemented. I also returned firebase messaging (with the ability to switch to unified push and vice versa) and implemented voip and firebase messaging on my server <a href='./#/matrix' style='color: #2C3E50; text-decoration: underline;'>iquxae.org</a>",
+      item1Desc: "After a long hiatus, I decided to bring back voice calls based on the FluffyChat core. While currently under development, the main functionality is already implemented. I have also restored Firebase Cloud Messaging (with the ability to switch to UnifiedPush and vice versa) and enabled VoIP and Firebase support on my server <a href='./#/matrix' style='color: #2C3E50; text-decoration: underline;'>iquxae.org</a>.",
       item2Title: 'Website Redesign Complete',
       item2Date: 'November 28, 2025',
       item2Desc: "We've completely redesigned IQUXAe.org with a fresh new look! The site now features a cleaner interface, better navigation, and improved mobile support. We've also added a comprehensive registration guide to help new users join our Matrix homeserver.",
@@ -354,9 +354,9 @@ export const translations = {
     news: {
       title: 'Новости',
       subtitle: 'Последние обновления от IQUXAe.org',
-      item1Title: 'Добавление firebase messaging и тестирование voip звонков в quikxchat!',
+      item1Title: 'Firebase Messaging и VoIP звонки в QuikxChat',
       item1Date: '11 декабря 2025',
-      item1Desc: 'спустя долгое время я решил вернуть и звонки из основы fluffychat, сейчас они на стадии разработки, но основная функциональность реализована, также я вернул firebase messaging( с возможностью переключения на unified push и наоборот) и реализовал voip и firebase messaging на своем сервере <a href="./#/matrix" style="color: #2C3E50; text-decoration: underline;">iquxae.org</a>',
+      item1Desc: 'Спустя долгое время я решил вернуть функцию звонков, основанную на ядре FluffyChat. На данный момент они находятся в разработке, но основной функционал уже готов. Также я вернул поддержку Firebase Messaging (с возможностью переключения на UnifiedPush и наоборот) и настроил VoIP и push-уведомления на сервере <a href="./#/matrix" style="color: #2C3E50; text-decoration: underline;">iquxae.org</a>.',
       item2Title: 'Редизайн сайта завершен',
       item2Date: '28 ноября 2025',
       item2Desc: 'Мы полностью переработали IQUXAe.org с новым дизайном! Сайт теперь имеет более чистый интерфейс, улучшенную навигацию и улучшенную поддержку мобильных устройств. Мы также добавили подробное руководство по регистрации, чтобы помочь новым пользователям присоединиться к нашему Matrix homeserver.',
