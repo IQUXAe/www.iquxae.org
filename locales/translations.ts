@@ -24,9 +24,9 @@ export const translations = {
       supportDesc: 'IQUXAe.org is an independent hobby project. Your support helps keep our servers running and enables us to continue developing open-source tools for the community.',
       donateBtn: 'Donate',
       newsTitle: 'Latest News',
-      newsItemTitle: 'Website Redesign Complete',
-      newsItemDate: 'November 28, 2025',
-      newsItemDesc: "We've completely redesigned IQUXAe.org with a fresh new look and improved navigation.",
+      newsItemTitle: 'New Features in QuikxChat: VoIP & Firebase Messaging',
+      newsItemDate: 'December 11, 2025',
+      newsItemDesc: 'We have restored Firebase Messaging support (with UnifiedPush switching) and implemented initial VoIP calling functionality based on the FluffyChat core.',
       readAll: 'Read all news →'
     },
     matrix: {
@@ -207,9 +207,9 @@ export const translations = {
       supportDesc: 'IQUXAe.org — это независимый хобби-проект. Ваша поддержка помогает поддерживать работу наших серверов и позволяет нам продолжать разработку инструментов с открытым исходным кодом для сообщества.',
       donateBtn: 'Поддержать',
       newsTitle: 'Последние новости',
-      newsItemTitle: 'Редизайн сайта завершен',
-      newsItemDate: '28 ноября 2025',
-      newsItemDesc: 'Мы полностью переработали IQUXAe.org с новым дизайном и улучшенной навигацией.',
+      newsItemTitle: 'Новые функции в QuikxChat: VoIP и Firebase Messaging',
+      newsItemDate: '11 декабря 2025',
+      newsItemDesc: 'Мы восстановили поддержку Firebase Messaging (с переключением на UnifiedPush) и реализовали начальную функциональность VoIP-звонков на базе ядра FluffyChat.',
       readAll: 'Читать все новости →'
     },
     matrix: {
